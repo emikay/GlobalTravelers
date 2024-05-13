@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Global Travelers</title>
+      <link  href="css/reset.css" rel="stylesheet" type="text/css">
+<!--      <link href="css/main.css" rel="stylesheet" type="text/css">-->
+      <link href="css/main.min.css" rel="stylesheet" type="text/css">
+  </head> 
+   
+  <body>
+<!--     main>section.booking>article.cta>header>h1+p>lorem-->
+      <main>
+          <section class="booking">
+              <article class="cta">
+                  <header>
+                      <h1>Book your trip today</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, facilis pariatur. Tempore eligendi odit pariatur sapiente eum commodi quidem doloremque. Culpa obcaecati, et numquam deserunt minima natus ipsa esse perspiciatis?</p>
+                  </header>
+              </article>
+              
+              <form action="#" id="bookTrip" method="post" enctype="text/plain">
+<!--                 ul.formGroup#tripType>li*3>label>input[type=radio]-->
+                  <ul class="radCheck" id="tripType">
+                      <li>
+                          <label for="roundTrip">
+                              <input type="radio" id="roundTrip" name="flightType">
+                              <span>Round trip</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="oneWay">
+                              <input type="radio" id="oneWay" name="flightType">
+                              <span>One way</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="multiCity">
+                              <input type="radio" id="multiCity" name="flightType">
+                              <span>Multi-city</span>
+                          </label>
+                      </li>
+                  </ul>
+<!--                  ul.formGroup#additionalServices>li*6>label>input[type=checkbox]-->
+                  <ul class="radCheck" id="additionalServices">
+                      <li>
+                          <label for="withKid">
+                              <input type="checkbox" id="withKid" name="extraServices">
+                              <span>Traveling with child</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="wheelchair">
+                              <input type="checkbox" id="wheelchair" name="extraServices">
+                              <span>Traveling with wheelchair</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="flightFear">
+                              <input type="checkbox" id="flightFear" name="extraServices">
+                              <span>Fear of flying</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="mediaEquip">
+                              <input type="checkbox" id="mediaEquip" name="extraServices">
+                              <span>Need media equipment</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="allergies">
+                              <input type="checkbox" id="allergies" name="extraServices">
+                              <span>Food Allergies</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label for="withPet">
+                              <input type="checkbox" id="withPet" name="extraServices">
+                              <span>Traveling with pet</span>
+                          </label>
+                      </li>
+                  </ul>
+<!--                  ul.formGroup#placeDate>li*4>label+input.formControl-->
+                  <ul class="formGroup" id="placeDate">
+                      <li>
+                          <label for="flyingFrom">From</label>
+                          <input type="text" class="formControl" id="flyingFrom" placeholder="City or airport">
+                      </li>
+                      <li>
+                          <label for="flyingTo">To</label>
+                          <input type="text" class="formControl" id="flyingTo" placeholder="City or airport">
+                      </li>
+                      <li>
+                          <label for="departing">Departing date</label>
+                          <input type="text" class="formControl" id="departing" placeholder="mm/dd/yyyy">
+                      </li>
+                      <li>
+                          <label for="returning">Returning date</label>
+                          <input type="text" class="formControl" id="returning" placeholder="mm/dd/yyyy">
+                      </li>
+                  </ul>
+<!--                  ul.formGroup#details>li*3>label+select.formControl>option*4-->
+                  <ul class="formGroup" id="details">
+                      <li>
+                          <label for="numOfAdults">Adults (18+)</label>
+                          <select name="numOfAdults" id="numOfAdults" class="formControl">
+                             <option value="a1">1</option>
+                             <option value="a2">2</option>
+                             <option value="a3">3</option>
+                             <option value="a4">4</option>
+                          </select>
+                      </li>
+                      <li>
+                          <label for="numOfKids">Children (0-17)</label>
+                          <select name="numOfKids" id="numOfKids" class="formControl">
+                             <option value="c1">1</option>
+                             <option value="c2">2</option>
+                             <option value="c3">3</option>
+                             <option value="c4">4</option>
+                             <option value="c5">5</option>
+                             <option value="c6">6</option>
+                          </select>
+                      </li>
+                      <li>
+                          <label for="travelClass">Travel class</label>
+                          <select name="travelClass" id="travelClass" class="formControl">
+                             <option value="economy">Economy class</option>
+                             <option value="biz">Business class</option>
+                             <option value="first">First class</option>
+                          </select>
+                      </li>
+                  </ul>
+                  <textarea name="msg" id="msg" class="formControl" placeholder="Please specify any additional instructions"></textarea>
+                  
+                  <label for="phone">Best phone number for contacting you (123-222-3333)</label>
+                  <input type="tel" required id="phone" pattern="[0-3]{3}-[0-9]{3}-[0-9]{4}">
+                  
+                  <ul class="formGroup btns">
+                     <li>
+                          <input type="reset" class="reset" value="Clear">
+                      </li>
+                      <li>
+                          <input type="submit" class="submit" value="Show flights">
+                      </li>
+                  </ul>
+              </form>
+          </section>
+      </main>
+  </body> 
+    
+</html>
+
+
+
+
+
+
